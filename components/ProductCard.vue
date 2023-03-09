@@ -2,6 +2,7 @@
     <div class="card text-center">
         <img :src="product.image" alt="product thumb" class="thumb" />
         <h2 class="text-[18px] truncate m-4"> {{ product.title }} </h2>
+        <h2 class="text-[18px] truncate m-4"> {{ vnd.format(product.price) }} </h2>
         <NuxtLink :to="`/products/${product.id}`"> 
             <p class="btn my-4"> View more </p> 
         </NuxtLink>   
@@ -10,6 +11,11 @@
 
 <script setup> 
     const { product } = defineProps(['product'])
+
+    let vnd = Intl.NumberFormat('us', {
+        style: 'currency',
+        currency: 'USD',
+    });
 </script>
 
 <style lang="scss" scoped>
