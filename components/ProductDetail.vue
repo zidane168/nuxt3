@@ -1,11 +1,15 @@
 <template>
-    <div>
+    <div class="grid grid-cols-2 gap-2"> 
         <img :src="product.image" alt="product thumb" class="thumb" />
-        <p> Products details for <span class="red"> {{ product.title  }}  </span> </p>
-        <hr />
-
-        <p class="red"> {{ vnd.format(product.price) }} </p>
-        <p> {{ product.description }} </p> 
+        <div>
+            <h3 class="mb-[10px]"> {{ product.title  }}  </h3>
+            <hr /> 
+            <p class="red"> {{ vnd.format(product.price) }} </p>
+            <hr />
+            <div class="mt-2"> Description </div> 
+            <p class="text-gray-400 py-2 text-justify"> {{ product.description }} </p> 
+        </div> 
+ 
     </div> 
 </template>
 
@@ -25,9 +29,11 @@
 </script>
 
 <style lang="scss" scoped>
+    .red {
+        color: red;
+        font-weight: bold;
+    }
     .thumb {
-        max-height: 120px;
-        min-height: 120px; 
-        margin: 0 auto;
+        max-width:  40%;  
     }
 </style>

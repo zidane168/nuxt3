@@ -1,7 +1,7 @@
 <!-- /products/:id -->
 
-<template>
-    <ProductDetail :product="product" />
+<template> 
+    <ProductDetail :product="product" /> 
 </template>
 
 <script setup> /* missing setup will failed */
