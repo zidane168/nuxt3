@@ -1,8 +1,8 @@
-<!-- /about/ -->
+<!-- /about/ --> 
+
 <template>
     <div>
-        <h2> Product index page  </h2>
-        <p> Lorem ipsum dolor sit </p>
+        <h2> About </h2>
     </div>
 </template>
 

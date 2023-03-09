@@ -5,14 +5,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
-
-        return {}
-    }
-}
+<script> 
+    definePageMeta({
+        layout: 'products'      /* use product default layouts layouts/products.vue */ 
+    }) 
 </script>
 
 <style lang="scss" scoped>
