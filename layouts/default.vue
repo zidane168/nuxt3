@@ -1,21 +1,22 @@
 <template>
+    <link href="/assets/css/tailwind.css" rel="stylesheet">
     <div> 
-        <header>
+        <header class="shadow-sm bg-white">
             <div class="layout">
                 This is default Template for Index 
             </div>
-            <nav> 
-                <ul>
+            <nav class="container mx-auto p-4 flex justify-between"> 
+                <NuxtLink to="https://learn-tech-tips.blogspot.com" class="font-bold"> Learn Tech Tips </NuxtLink>
+                <ul class="flex gap-4">
                     <li> <NuxtLink to="/"> Home </NuxtLink> </li>
                     <li> <NuxtLink to="/about"> About </NuxtLink> </li>
-                    <li> <NuxtLink to="/products"> Products </NuxtLink> </li>
+                    <li> <NuxtLink to="/products" class="btn"> Products </NuxtLink> </li>
                 </ul>
-            </nav>
-            <a href="about"> Normal link </a>
+            </nav> 
         </header>
 
         <!-- output the page content -->
-        <div>
+        <div class="container mx-auto p-4">
             <slot /> <!-- use slot for get content of page -->
         </div> 
     </div>
