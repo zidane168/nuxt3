@@ -10,4 +10,14 @@ body {
     .btn {
         @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm
     }
+
+    .layout {
+        background-color: bisque;
+        border-radius: 10px;
+        padding: 10px;
+        color: orangered;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+    }
 }

@@ -1,0 +1,28 @@
+
+// create nuxt3 app
+npx nuxi init nuxt-app
+
+remove app.vue on root folder
+uu diem cua NuxtLink ko can request to server, chi request from client side
+https://www.youtube.com/watch?v=LZDQhOaBBbk
+https://www.youtube.com/watch?v=tGhMaMIYRiI
+
+
+
+
+
+
+
+// -------------
+
+cai npx create-nuxt-app demo xong phai manual cai them hai cai ben duoi (nuxt2)
+npm i postcss-import 
+npm i autoprefixer
+
+Rule can only have one resource source (provided resource and test + include + exclude)
+
+
+"autoprefixer": "^9.0.0", 
+"postcss-import": "^15.1.0",
+
+ 

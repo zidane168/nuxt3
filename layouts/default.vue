@@ -22,8 +22,8 @@
     </div>
 </template>
 
-<style >
-    .layout {
+<style scoped >
+    /* .layout {
         background-color: bisque;
         border-radius: 10px;
         padding: 10px;
@@ -31,7 +31,7 @@
         justify-content: center;
         display: flex;
         font-weight: bold;
-    }
+    } */
 
     li {
         padding: 10px;
