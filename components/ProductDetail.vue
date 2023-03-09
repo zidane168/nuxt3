@@ -1,4 +1,4 @@
-<template>
+<template> 
     <div class="grid grid-cols-2 gap-2"> 
         <img :src="product.image" alt="product thumb" class="thumb" />
         <div>
@@ -8,6 +8,10 @@
             <hr />
             <div class="mt-2"> Description </div> 
             <p class="text-gray-400 py-2 text-justify"> {{ product.description }} </p> 
+            <button class="btn flex">
+                <i class="material-icons mr-2"> add_shopping_cart </i>
+                <span> Add to cart </span>
+            </button>
         </div> 
  
     </div> 

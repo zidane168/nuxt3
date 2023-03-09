@@ -1,7 +1,13 @@
 <!-- /products/:id -->
 
 <template> 
-    <ProductDetail :product="product" /> 
+    <div>
+        <Head>
+            <Title> NuxtJS | {{  product.title }} </Title>
+            <Meta name="description" :content="product.description"> </Meta> 
+        </Head>
+        <ProductDetail :product="product" /> 
+    </div>
 </template>
 
 <script setup> /* missing setup will failed */
